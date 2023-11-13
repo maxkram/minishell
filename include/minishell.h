@@ -6,7 +6,7 @@
 /*   By: ycyr-roy <ycyr-roy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 17:27:09 by ycyr-roy          #+#    #+#             */
-/*   Updated: 2023/11/13 18:12:39 by ycyr-roy         ###   ########.fr       */
+/*   Updated: 2023/11/13 18:42:51 by ycyr-roy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,12 @@ typedef struct cmd
 	struct cmd	*next;
 }			t_cmd;
 
+/**
+ * NOTE: Multiple cmds when pipe
+*@param	infile path to infile
+*@param	outfile path to outfile
+*@param	first_cmd first cmd in chained lst.
+*/
 typedef struct cmd_table
 {
 	char	*infile;
